@@ -1,0 +1,28 @@
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+npm-debug.log*
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Dependency/build folders if tooling is added later
+node_modules/
+dist/
+build/
+
+# Editor state
+.vscode/*
+!.vscode/settings.json
+.idea/
+*.sublime-workspace
+
+# Temporary files
+*.tmp
+*~
