@@ -14,4 +14,4 @@ Landing page estatica para Mobile Digital Tracking.
 ## Contacto y plataforma
 
 - Plataforma: `https://app.mdtracking.com`
-- Contacto: `contacto@mdtracking.com`
+- Contacto: `rarzola@mdtracking.com`
