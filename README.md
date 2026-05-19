@@ -23,15 +23,18 @@ Landing page estatica para Mobile Digital Tracking.
 - Region: `mx-central-1`
 - Bucket para dominio raiz: `mdtracking.com`
 - Endpoint raiz preparado: `http://mdtracking.com.s3-website.mx-central-1.amazonaws.com`
-- Bucket para `www`: `www.mdtracking.com`, redirige a `http://mdtracking.com`
+- Bucket para `www`: `www.mdtracking.com`
+- Certificado ACM: `arn:aws:acm:us-east-1:061051231398:certificate/8e5ed20f-d52e-430a-adf8-af1a564f592a`
+- CloudFront distribution: `E2J633HGJW4TPU`
+- CloudFront domain: `d11iwcccopk57h.cloudfront.net`
 
-Nota: CloudFront fue la opcion recomendada para HTTPS/CDN con bucket privado, pero AWS rechazo crear la distribucion porque la cuenta requiere verificacion antes de agregar recursos CloudFront. Mientras se verifica la cuenta, el sitio queda publicado con S3 Static Website Hosting.
+Nota: el sitio usa CloudFront con certificado ACM para HTTPS y origen S3 website. Cuando el DNS apunte a CloudFront, `https://mdtracking.com` y `https://www.mdtracking.com` deben responder el landing.
 
-## DNS pendiente en Google Cloud DNS
+## DNS pendiente en Google/Squarespace
 
-Cuando se quiera reemplazar la pagina en construccion del dominio raiz:
+Para usar HTTPS con CloudFront:
 
-- Cambiar `mdtracking.com.` de los registros A actuales de Squarespace a un registro `ALIAS` hacia `mdtracking.com.s3-website.mx-central-1.amazonaws.com.`
-- Cambiar `www.mdtracking.com.` a un `CNAME` hacia `www.mdtracking.com.s3-website.mx-central-1.amazonaws.com.`
+- Cambiar `mdtracking.com.` de `ALIAS` S3 website a `ALIAS` hacia `d11iwcccopk57h.cloudfront.net.`
+- Cambiar `www.mdtracking.com.` de `CNAME` S3 website a `CNAME` hacia `d11iwcccopk57h.cloudfront.net.`
 
-Google Cloud DNS soporta `ALIAS` en el apex, pero solo se puede configurar con `gcloud` o API, no desde la consola web.
+Mantener los CNAME de validacion ACM mientras el certificado este en uso.
