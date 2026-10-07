@@ -16,7 +16,15 @@ Landing page estatica para Mobile Digital Tracking.
 - Plataforma: `https://app.mdtracking.com`
 - Contacto: `rarzola@mdtracking.com`
 
-## Publicacion AWS
+## Publicacion actual: Cloudflare Pages
+
+- Proyecto: `mdt-landing`.
+- URL HTTPS: https://mdt-landing-4br.pages.dev/
+- Publicada el 2026-10-06 mediante Direct Upload: 42 archivos publicos (paginas principales y assets).
+- No incluir `.git`, documentacion ni paginas demo en el paquete de publicacion.
+- Dominios activos: mdtracking.com / www.mdtracking.com; CTA app.mdtracking.com.
+
+## Publicacion AWS historica (cuenta suspendida)
 
 - Bucket S3: `mdt-landing-061051231398`
 - URL publicada: `http://mdt-landing-061051231398.s3-website.mx-central-1.amazonaws.com`
@@ -30,7 +38,7 @@ Landing page estatica para Mobile Digital Tracking.
 
 Nota: el sitio usa CloudFront con certificado ACM para HTTPS y origen S3 website. Cuando el DNS apunte a CloudFront, `https://mdtracking.com` y `https://www.mdtracking.com` deben responder el landing.
 
-## DNS pendiente en Google/Squarespace
+## DNS historico AWS (no aplicar; migracion a Cloudflare pendiente)
 
 Para usar HTTPS con CloudFront:
 
@@ -38,3 +46,8 @@ Para usar HTTPS con CloudFront:
 - Cambiar `www.mdtracking.com.` de `CNAME` S3 website a `CNAME` hacia `d11iwcccopk57h.cloudfront.net.`
 
 Mantener los CNAME de validacion ACM mientras el certificado este en uso.
+
+## Dependencias públicas (2026-10-06)
+
+Las páginas públicas usan únicamente js/mdt.js para el menú móvil; no publicar jQuery, Bootstrap JS, main.js ni demos de la plantilla. Se conservan CSS de rejilla/reboot y estilos propios. Publicar las siete páginas principales (incluido404), css/fonts/icon/img y solo js/mdt.js. Menú móvil probado en390px.
+
