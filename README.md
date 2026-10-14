@@ -20,7 +20,7 @@ Landing page estatica para Mobile Digital Tracking.
 
 - Proyecto: `mdt-landing`.
 - URL HTTPS: https://mdt-landing-4br.pages.dev/
-- Publicada el 2026-10-06 mediante Direct Upload: 42 archivos publicos (paginas principales y assets).
+- Publicada el 2026-10-07 mediante Direct Upload: 33 archivos públicos (páginas principales y assets), rediseño animado y nueva identidad.
 - No incluir `.git`, documentacion ni paginas demo en el paquete de publicacion.
 - Dominios activos: mdtracking.com / www.mdtracking.com; CTA app.mdtracking.com.
 
@@ -49,5 +49,9 @@ Mantener los CNAME de validacion ACM mientras el certificado este en uso.
 
 ## Dependencias públicas (2026-10-06)
 
-Las páginas públicas usan únicamente js/mdt.js para el menú móvil; no publicar jQuery, Bootstrap JS, main.js ni demos de la plantilla. Se conservan CSS de rejilla/reboot y estilos propios. Publicar las siete páginas principales (incluido404), css/fonts/icon/img y solo js/mdt.js. Menú móvil probado en390px.
+Las páginas públicas usan js/mdt.js para el menú móvil y la portada añade js/experience.js para la simulación animada; no publicar jQuery, Bootstrap JS, main.js ni demos de la plantilla. Se conservan CSS de rejilla/reboot y estilos propios. Publicar las siete páginas principales (incluido404), css/fonts/icon/img y js/mdt.js + js/experience.js. Menú móvil probado en390px.
 
+
+## Portada animada (2026-10-07)
+
+La portada carga css/experience.css y js/experience.js, además de main.css y mdt.js. Incluir ambos archivos en Direct Upload. Ciudad SVG propia y datos ilustrativos; controles de rastreo/recorrido y pausa, soporte de movimiento reducido. La animación se suspende fuera de vista y con pestaña oculta. Logo y favicon vectoriales compartidos. Rediseño publicado en mdtracking.com/www; assets CSS/JS/logo verificados por SHA256 y HTTP200.

@@ -1,15 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="230" height="52" viewBox="0 0 230 52" role="img" aria-labelledby="title">
-  <title id="title">Mobile Digital Tracking</title>
-  <defs>
-    <linearGradient id="pin" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0" stop-color="#21d4fd"/>
-      <stop offset="1" stop-color="#00c853"/>
-    </linearGradient>
-  </defs>
-  <rect width="52" height="52" rx="14" fill="#10141f"/>
-  <path d="M26 8c-8.3 0-15 6.4-15 14.4 0 10.8 15 21.6 15 21.6s15-10.8 15-21.6C41 14.4 34.3 8 26 8z" fill="url(#pin)"/>
-  <circle cx="26" cy="22" r="5.8" fill="#10141f"/>
-  <path d="M16 39c5.4 3.2 14.6 3.2 20 0" fill="none" stroke="#21d4fd" stroke-width="2" stroke-linecap="round" opacity=".55"/>
-  <text x="66" y="23" fill="#fff" font-family="Ubuntu, Arial, sans-serif" font-size="18" font-weight="700">Mobile Digital</text>
-  <text x="66" y="42" fill="#21d4fd" font-family="Ubuntu, Arial, sans-serif" font-size="18" font-weight="700">Tracking</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="290" height="68" viewBox="0 0 290 68" role="img" aria-labelledby="title"><defs><linearGradient id="mdt-metal" x2="0.25" y2="1"><stop stop-color="#ffffff"/><stop offset=".36" stop-color="#edf8f5"/><stop offset=".52" stop-color="#9eb7ba"/><stop offset=".65" stop-color="#e9f7f2"/><stop offset="1" stop-color="#718b94"/></linearGradient><linearGradient id="mdt-lime" x2=".7" y2="1"><stop stop-color="#e9ffb6"/><stop offset=".42" stop-color="#bcff62"/><stop offset="1" stop-color="#579929"/></linearGradient><filter id="mdt-depth" x="-30%" y="-30%" width="170%" height="180%"><feDropShadow dx="0" dy="2.5" stdDeviation="0" flood-color="#31444c"/><feDropShadow dx="0" dy="4.5" stdDeviation="0" flood-color="#1b2c35"/><feDropShadow dx="0" dy="7" stdDeviation="3" flood-color="#000" flood-opacity=".6"/></filter></defs>
+<title id="title">Mobile Digital Tracking — MDT</title>
+<g filter="url(#mdt-depth)" transform="translate(5 4)">
+<path d="M44 9A24 24 0 1 0 49 46" fill="none" stroke="url(#mdt-lime)" stroke-width="7"/>
+<path d="M24 38L36 26H26L33 17H57L51 41H42L45 31L32 44Z" fill="url(#mdt-metal)"/>
+<path d="M3 9H20M0 19H12" stroke="#42dfdf" stroke-width="3"/>
+</g>
+<g filter="url(#mdt-depth)" fill="url(#mdt-metal)" transform="translate(86 9)">
+<path d="M0 33L7 0H15L22 17L35 0H44L37 33H28L32 14L20 29H17L12 14L8 33Z"/>
+<path d="M48 0H63C85 0 84 33 59 33H41ZM55 8L51 25H60C73 25 76 8 63 8Z" fill-rule="evenodd"/>
+<path d="M84 0H117L115 8H103L98 33H89L94 8H82Z"/>
+</g>
+<text x="86" y="58" fill="#a1b7be" font-family="Arial,sans-serif" font-size="9" letter-spacing="1.6">MOBILE DIGITAL TRACKING</text>
 </svg>
